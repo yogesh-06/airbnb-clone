@@ -1,8 +1,11 @@
 {
+	"homepage": "https://yogesh-06.github.io/airbnb-clone",
 	"name": "airbnb-clone",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d build",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
@@ -19,6 +22,7 @@
 		"date-fns": "^2.30.0",
 		"eslint": "8.39.0",
 		"eslint-config-next": "13.3.4",
+		"gh-pages": "^5.0.0",
 		"leaflet": "^1.9.3",
 		"next": "13.3.4",
 		"next-auth": "^4.22.1",
